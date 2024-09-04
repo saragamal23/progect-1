@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    opacity: .8;
+    z-index: 30;
+}
+.img1{
+    width: 50px;
+    height: 40px;
+    margin-left: 40px;
+    padding-top: 5px;
+}
+.list1{
+    list-style-type: none;
+    float: right;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+.list1 li{
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 20px;
+}
+.list1 li a{
+    color: white;
+    text-decoration: none;
+}
+.home{
+    height: 100vh;
+    background-image: url(../images/image\ .jpg);
+    position: relative;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home-title{
+    font-size: 120px;
+    color: white;
+    line-height: none;
+}
+.home-p{
+    color: white;
+    font-size: 15px;
+    line-height: none;
+}
+.btn{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.home-btn-start{
+    margin-left: 100px;
+}
+.home-btn-learn{
+    background-color: brown;
+    margin-left: 20px;
+}
+.btn:hover{
+    opacity: .5;
+}
+.h2-welcome-title{
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 400px;
+    color: brown;
+}
+.line-welcome{
+    text-align: center;
+    margin-left: 30px;
+    color:brown;
+    width: 90%;
+    font-size: 20px;
+}
+.item-welcome{
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid brown;
+    float: left;
+    margin-left: 100px;
+    position: relative;
+}
+.i-item{
+    color: brown;
+    font-size: 30px;
+    padding-left: 50%;
+    padding-top: 15px;
+}
+.h2-item{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.p-item{
+    text-align: center;
+    opacity: .5;
+    padding-top: 15px;
+}
+.a-item{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 40%;
+    line-height: 65px;
+    color: brown;    
+}
+.item-welcome::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.item-welcome:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+    background-color: brown;
+}
+.h2-menu{
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 550px;
+    color: brown;   
+}
+.line-menu{
+    text-align: center;
+    margin-left: 50px;
+    color:brown;
+    font-size: 20px;
+}
+.item-menu{
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid brown;
+    float: left;
+    margin-left: 100px;
+    position: relative;
+}
+.img-menu{
+    width: 296px;
+    height: 196px;
+    border-radius: 2;
+}
+.menu-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(109, 60, 60, 0.5);
+    visibility: hidden;
+}
+.item-menu:hover .menu-overlay{
+    visibility: visible;
+}
+.title-menu{
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+}
+.menu-p{
+    color: aliceblue;
+    text-align: center;
+}
+.i-menu{
+    background-color: brown;
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 40%;
+}
+.a1-menu{
+    width: 12px;
+    height: 12px;
+    float: left;
+    display: block;
+    padding-left: 40%;   
+}
+.a2-menu{
+    width: 15px;
+    height: 12px;
+    float: left;
+    display: block;
+    padding-left: 20%;
+}
+.container{
+    width: 100%;
+    height: 110%;
+    background-color: bisque;
+
+}
+.title-offer{
+    color: brown;
+    text-align: center;
+    padding: 5%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.line-offer{
+    color:brown;
+    font-size: 20px;
+    margin-top: -60px;
+    margin-left: 45%;
+}
+.item-offer{
+    margin-top: 100px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid brown;
+    float: left;
+    margin-left: 100px;
+    position: relative;
+}
+.i-offer{
+    color: brown;
+    font-size: 30px;
+    padding:20px ;
+    display: inline-block;
+}
+.h2-offer{
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.p-offer{
+    opacity: .5;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+}
+.item-offer::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.item-offer:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+    background-color: brown;
+}
+.title-choose{
+    color: brown;
+    text-transform: capitalize;
+    font-size: 40px;
+    padding-top: 700px;
+    margin-left: 30px;
+}
+.p-choose{
+    padding: 30px;
+    word-spacing: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.i-choose{
+    color: brown;
+    display:inline;
+}
+.p-ok{
+    display:inline ;
+    color: black;
+}
+.why{
+    padding-top: 50px;
+    padding-left:70px;
+    margin-left: 100px;
+    margin: -20px;
+}
+.img-choose{
+    float: left;
+    margin-left:750px ;
+    margin-top: -370px;
+    width:500px;
+    height:500px;
+}
+.number{
+    height: 350px;
+    margin-top: 300px;
+    background-image:url(../images/Experience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.number-overlay{
+    position: absolute;
+    background-color:rgba(0, 0, 0, .7);
+    width:100% ;
+    height: 100%;
+}
+.number-group{
+    margin-top: 100px;
+    margin-left: 250px;
+    position: absolute;
+}
+.i-number{
+    color: burlywood;
+    font-size: 30px;
+    margin-left: 15px;
+}    
+.h2-number{
+    color: aliceblue;
+    line-height: 50px;
+    font-size: 35px;
+}
+.p-number{
+    color: aliceblue;
+}
+.number-awards{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+.number-cups{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 750px;
+}
+.number-meals{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 1000px;
+}
+.title-price{
+    text-transform: capitalize;
+    color: brown;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.line-price{
+    text-align: center;
+    margin-left: 70px;
+    color:brown;
+    width: 90%;
+    font-size: 20px;
+}
+.price1{
+    margin-top: 100px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid gray;
+    float: left;
+    margin-left: 100px;
+    position: relative;
+}
+.p-price{
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.circle-price{
+    border: 2px solid brown;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: brown;
+    margin-left:  100px ;
+    margin-top:30px ;
+}
+.b-price{
+    font-size: 50px;
+    padding: 25%;
+}
+.b-price-month{
+    padding: 10%;
+    font-size: 18px;
+}
+.p-price1{
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+}
+.now{
+    width: 100px;
+    height: 20px;
+    border: 1px solid brown ;
+    margin-top: 40px;
+    text-align: center;
+    margin-left:100px ;
+}
+.price1::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+}
+.price1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 1s;
+    background-color: brown;
+}
+.price1:hover .p-price{
+    color: black;
+}
+.price1:hover .b-price{
+    color:black;
+}
+.price1:hover .b-price-month{
+    color: black;
+}
+.chef{
+    height: 350px;
+    margin-top: 600px;
+    background-image:url(../images/Experience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.chef-overlay{
+    position: absolute;
+    background-color:rgba(0, 0, 0, .7);
+    width:100% ;
+    height: 100%;
+}
+.chef-Bob{
+margin-top: 100px;
+margin-left: 50px;
+display: inline-block;
+}
+.img-chef{
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
+    border-radius:35px ;
+}
+.h2-chef{
+    color: blanchedalmond;
+    margin-left: 100px;
+    margin-top: -60px;
+}
+.b-chef{
+    color: orange;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+.p-chef{
+    color: blanchedalmond;
+    margin-top: 20px;
+}
+.chef-sara{
+    margin-left:500px ;
+    margin-top: -110px;
+}
+.chef-Tony{
+    margin-left: 900px;
+    margin-top:-110px ;
+}
+.h2-team{
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 550px;
+    color: brown;   
+}
+.line-team{
+    text-align: center;
+    margin-left: 50px;
+    color:brown;
+    font-size: 20px;
+}
+.team-item{
+    width: 300px;
+    height: 250px;
+    background-color: brown;
+    position: relative;
+    padding: 15px 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+}
+.img-team{
+    width: 270px;
+    height: 150px;
+    position: relative;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility : hidden;
+}
+.team-item:hover .team-overlay{
+    visibility:visible;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(251, 97, 7);
+    color:white;
+    font-size: 30;
+    margin-left:auto;
+}
+.team-overlay a i{
+    line-height: 40px;
+}
+.team-info-title{
+    padding: 11px 0px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.team-info-p{
+    color: blanchedalmond;
+    text-transform: uppercase;
+    text-align: center;
+}
+.team-item:hover .team-info-title{
+    color: yellow;
+}
+.team-item:hover .team-info-p{
+    color: orangered;
+}
+.team-item::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    opacity: 0;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    transition: 2s;
+}
+.h2-news{
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 550px;
+    color: brown;   
+}
+.line-news{
+    text-align: center;
+    margin-left: 50px;
+    color:brown;
+    font-size: 20px;
+}
+.news-item{
+    width: 250px;
+    height: 400px;
+    background-color:white;
+    margin-top: 80px;
+    margin-left: 130px;
+    display: inline-block;
+}
+.img-news{
+    width: 200px;
+    height: 150px;
+    padding-top:10px ;
+    margin-left: 20px;
+}
+.p-news{
+    display: inline-block;
+    margin-top: 20px;
+}
+.p2-news{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+.i-news{
+    color: brown;
+    margin-left: 20px;
+}
+.h2-news-item{
+    margin-top:30px ;
+ }
+ .a-news{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 5px;
+    line-height: 65px;
+    color: brown;
+ }
+ .news-item::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: brown;
+}
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: 2s;
+}
+.footer{
+    height: 350px;
+    margin-top: 50px;
+    background-image:url(../images/Experience.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.footer-overlay{
+    position: absolute;
+    background-color:rgba(0, 0, 0, .8);
+    width:100% ;
+    height: 100%;
+}
+.img-footer{
+    width: 150px;
+    height: 100px;
+    margin-left: 43%;
+    margin-top: 5%;
+    display: inline-block;
+}
+.a-footer{
+    margin-left: 480px;
+    margin-top: 30px;
+    color:white;
+}
+ .i-footer{
+    font-size: 50px;
+    color:brown;
+ }
+ .i-footer:hover{
+    color: orangered;
+ }
+ .p-footer{
+    color: blanchedalmond;
+    text-transform: uppercase;
+    margin-left:500px ;
+    font-size: 10px;
+    margin-top: 20px;
+ }
